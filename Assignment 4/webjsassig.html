@@ -1,0 +1,70 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function ADD()
+{
+var first_num= document.getElementById("1").value;
+var second_num=document.getElementById("2").value;
+ res= parseInt(first_num) + parseInt(second_num);
+ document.getElementById("result").value= res; 
+}
+function SUBnumber()
+{
+var first_num= document.getElementById("1").value;
+var second_num= document.getElementById("2").value;
+var res = first_num - second_num;
+ document.getElementById("result").value= res; 
+}
+function MULnumber()
+{
+var first_num= document.getElementById("1").value;
+var second_num= document.getElementById("2").value;
+var res = first_num * second_num;
+ document.getElementById("result").value= res; 
+}
+function DIVnumber()
+{
+var first_num= document.getElementById("1").value;
+var second_num= document.getElementById("2").value;
+var res = first_num / second_num;
+ document.getElementById("result").value= res; 
+}
+function MOD()
+{
+var first_num= document.getElementById("1").value;
+var second_num= document.getElementById("2").value;
+var res = first_num % second_num;
+ document.getElementById("result").value= res; 
+}
+</script>
+
+<h1 style="font-size:25;"> View PlainPrint? </h1>
+<br>
+<div>
+<label style="color:black;font-size:25"> Number 1 : </label>
+<input type="text" id="1" placeholder=" First Number" size="40" style="margin-top : -1.5%" >
+</div>
+<br>
+<div>
+<label style="color:black; font-size:25"> Number 2 : </label>
+<input type="text" id="2" placeholder=" Second Number" size="40" style="margin-top : -1.5%" >
+</div>
+<br> 
+</head>
+<body>
+<div style= "margin-left:3%">
+<input type="button" value="add" onclick="ADD()" style= "width:81px;"/> 
+<input type="button" value="sub" onclick="SUBnumber()" style= "width:81px;"/> 
+<input type="button" value="mul" onclick="MULnumber()"style= "width:81px;"/> 
+<input type="button" value="div" onclick="DIVnumber()"style= "width:81px;"/>
+<input type="button" value="MOD" onclick="MOD()"style= "width:80px;"/>  
+</div>
+<br>
+<div>
+<label style="color:black;font-size:25">Get Result: </label>
+<input type="text"  id="result" placeholder=" result" size="40" style="margin-top : -2.5%" style="margin-left: 15%">
+</div>
+<br>
+</body>
+</html>
